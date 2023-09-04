@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee"
+           version="4.0">
+
+    <servlet>
+      <servlet-name>EmployeeControllerInsert</servlet-name>
+      <servlet-class>Jsp.controller.EmployeeControllerInsert</servlet-class>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>EmployeeControllerInsert</servlet-name>
+      <url-pattern>/EmployeeControllerInsert</url-pattern>
+    </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RedirectRegisterController</servlet-name>
+    <servlet-class>Jsp.controller.RedirectRegisterController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RedirectRegisterController</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+
+  <filter>
+    <filter-name>ValidationFilter</filter-name>
+    <filter-class>Jsp.controller.ValidationFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>ValidationFilter</filter-name>
+    <url-pattern>/ValidationFilter</url-pattern>
+  </filter-mapping>
+
+  <servlet>
+    <servlet-name>EmployeeControllerDelete</servlet-name>
+    <servlet-class>Jsp.controller.EmployeeControllerDelete</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeControllerDelete</servlet-name>
+    <url-pattern>/EmployeeControllerDelete</url-pattern>
+  </servlet-mapping>
+
+    <servlet>
+      <servlet-name>EmployeeDAO</servlet-name>
+      <servlet-class>Jsp.Dao.EmployeeDAO</servlet-class>
+    </servlet>
+    <servlet-mapping>
+      <servlet-name>EmployeeDAO</servlet-name>
+      <url-pattern>/EmployeeDAO</url-pattern>
+    </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>EmployeeControllerView</servlet-name>
+    <servlet-class>Jsp.controller.EmployeeControllerView</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeControllerView</servlet-name>
+    <url-pattern>/EmployeeControllerView</url-pattern>
+  </servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>EmployeeModel</servlet-name>
+    <servlet-class>Jsp.model.EmployeeDAO</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>EmployeeModel</servlet-name>
+    <url-pattern>/EmployeeModel</url-pattern>
+  </servlet-mapping>
+
+    <welcome-file-list>-->
+      <welcome-file>views/register.jsp</welcome-file>-->
+    </welcome-file-list>-->
+
+
+
+</web-app>
